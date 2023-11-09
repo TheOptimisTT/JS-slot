@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot machine game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="balance">Balance:</h1>
+    <h2 id="test"></h2>
+    <label for="deposit">Deposit amount:</label>
+    <input type="text" id="depositText">
+    <button type="button" id="depositBtn">Deposit</button><br>
+    <hr>
+
+    <label for="lines">Enter the number of lines to bet on(1-3):</label><br>
+    <input type="text" id="linesText"><br>
+    <label for="bet">Enter the total bet per line:</label><br>
+    <input type="text" id="betText"><br>
+    <button type="button" id="betBtn">Bet</button>
+
+    <h2 id="showBet"></h2>
+    <h2 id="showLines"></h2>
+    <h2 id="win"></h2>
+    <button type="button" id="spinBtn">Spin</button>
+    <hr>
+
+    <div class="results">
+        <h2 class="noMnoP">Slot Machine</h2><br>
+        <p class="noMnoP">----------------</p>
+        <label id="rowLabel-0" class="slot"> </label><br>
+        <p class="noMnoP">----------------</p>
+        <label id="rowLabel-1" class="slot"> </label><br>
+        <p class="noMnoP">----------------</p>
+        <label id="rowLabel-2" class="slot"> </label><br>
+        <p class="noMnoP">----------------</p>
+    </div>
+    <h2></h2>
+    <script src="play.js"></script>
+</body>
+</html>
