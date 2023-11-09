@@ -20,6 +20,23 @@ let lines;
 let bet;
 isValid = false;
 
+document.getElementById("helpBtn").onclick = function(){
+
+    if(document.getElementById("helpPlay").hidden){
+        document.getElementById("helpPlay").hidden=false;
+    }else{
+        document.getElementById("helpPlay").hidden=true;
+    }
+}
+document.getElementById("rewardsBtn").onclick = function(){
+
+    if(document.getElementById("helpRewards").hidden){
+        document.getElementById("helpRewards").hidden=false;
+    }else{
+        document.getElementById("helpRewards").hidden=true;
+    }
+}
+
 document.getElementById("depositBtn").onclick = function (){
     let deposit = document.getElementById("depositText").value;
     deposit = Number(deposit);

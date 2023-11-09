@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 id="balance">Balance:</h1>
-    <h2 id="test"></h2>
+    <h2 id="test">v1.0.0</h2>
     <label for="deposit">Deposit amount:</label>
     <input type="text" id="depositText">
     <button type="button" id="depositBtn">Deposit</button><br>
@@ -19,11 +19,35 @@
     <label for="bet">Enter the total bet per line:</label><br>
     <input type="text" id="betText"><br>
     <button type="button" id="betBtn">Bet</button>
+    <button type="button" id="helpBtn">Help</button>
+    <button type="button" id="rewardsBtn">Rewards</button>
+    <div id="helpPlay" hidden>
+        <p>How to play:</p>
+        <ol>
+            <li>Deposit some cash.</li>
+            <li>Choose number of lines to bet on you can choose up to 3 lines</li>
+            <li>You need to place a bet per line</li>
+            <li>Click Bet</li>
+            <li>Click Spin</li>
+            <li>Repeat</li>
+        </ol>
+    </div>
+
+    <div id="helpRewards" hidden>
+        <p>Possible Rewards:</p>
+        <ol>
+            <li>AAA = 500%</li>
+            <li>BBB = 400%</li>
+            <li>CCC = 300%</li>
+            <li>DDD = 200%</li>
+        </ol>
+    </div>
 
     <h2 id="showBet"></h2>
     <h2 id="showLines"></h2>
     <h2 id="win"></h2>
     <button type="button" id="spinBtn">Spin</button>
+    
     <hr>
 
     <div class="results">
