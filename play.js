@@ -65,9 +65,10 @@ document.getElementById("betBtn").onclick = function (){
         document.getElementById("showBet").innerHTML = "Your Bet per line: " + bet;
         document.getElementById("showLines").innerHTML = "Your number of lines: " + lines;
         isValid = true;
+        balance-=lines*bet;
+        document.getElementById("balance").innerHTML = "Balance: " + balance;
     }
-    balance-=lines*bet;
-    document.getElementById("balance").innerHTML = "Balance: " + balance;
+    
 }
 
 document.getElementById("spinBtn").onclick = function (){
